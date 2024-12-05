@@ -1,0 +1,8 @@
+To push something to git hub from vscode you have to add a ssh key to git hub then
+1. echo "# Githubrepos2" >> README.md
+2. git init
+3. git add .
+4. git commit -m "SecondCommittrypush"
+5. git branch -M main
+6. get remote add origin git@github.com:Radius80/Githubrepos2.git
+7. git push -u origin main
