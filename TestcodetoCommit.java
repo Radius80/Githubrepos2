@@ -6,6 +6,7 @@ public class TestcodetoCommit {
         double [][] ar2 = {{2,2,2},{1,1,1},{2,2,2}};
         double [][] mult = matrixMult(ar1, ar2, ar1[0].length);
         System.out.print(LIST2DARRAY(mult));
+        System.out.println(TestcodetoCommit.IntegerTOOBinary(8));
     }
 
     /**Print contents of 2D array
@@ -29,6 +30,7 @@ public class TestcodetoCommit {
     /**
      * Will 2 square matrices of real values
      * @implNote I wanted to just print something to work of, and found Sytem.arraycopy or something
+     
      * @param ar1 : first double square matrix
      * @param ar2 : second double square matrix
      * @param l: Length of array
@@ -41,5 +43,25 @@ public class TestcodetoCommit {
         System.arraycopy(ar1,0,ret,0,l);
 
         return ret;
+    }
+
+    /**
+     * Converts a integer to binary and displayes it as a string
+     * @param N: Int to be desplayed as binary string
+     * @return: String representing binary version of int
+     * @implNote: I couldn't remember if integer division rounds up or down so I tested that out first ANSWER:::: It rounds down
+     * @implNote: I will use the mod to see if 
+     * @implNote: "/=" means i = i /2
+     * @implNote: It's flipped around it prints 1 when it's not a multiple of 2 and 0 when it is it works for some reason
+     * @implNote: It's because mod is on when it's not a multiple
+     */
+    public static String IntegerTOOBinary(int N)
+    {
+        String s = "";
+        for (int i = N ; i > 0 ; i /= 2)
+        {
+            s = (i % 2) + s;
+        }
+        return s;
     }
 }
