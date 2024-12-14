@@ -1,15 +1,5 @@
+public class StringstuffAPI {
 
-public class TestcodetoCommit {
-   
-    public static void main(String[] args) throws Exception {
-        // initializing declaration of a 2D array
-        StringstuffAPI ssapi = new StringstuffAPI();
-        double [][] ar1 = {{1,2,3},{3,4,5},{1,2,3}};
-        double [][] ar2 = {{2,2,2},{1,1,1},{2,2,2}};
-        double [][] mult = matrixMult(ar1, ar2, ar1[0].length);
-        System.out.print(ssapi.LIST2DARRAY(mult));
-        System.out.println(ssapi.IntegerTOOBinary(8));
-    }
 
     /**Print contents of 2D array
     * @param arr - 2D array of which contents need to be printed
@@ -27,24 +17,6 @@ public class TestcodetoCommit {
             contents = contents+ "\n";
         }
         return contents;
-    }
-
-    /**
-     * Will 2 square matrices of real values
-     * @implNote I wanted to just print something to work of, and found Sytem.arraycopy or something
-     
-     * @param ar1 : first double square matrix
-     * @param ar2 : second double square matrix
-     * @param l: Length of array
-     * @return resultand matrix
-     * 
-     */
-    public static double[][] matrixMult(double ar1[][], double ar2[][], int l)
-    {
-        double [][] ret = new double [l][l];
-        System.arraycopy(ar1,0,ret,0,l);
-
-        return ret;
     }
 
     /**
@@ -66,4 +38,5 @@ public class TestcodetoCommit {
         }
         return s;
     }
+
 }
