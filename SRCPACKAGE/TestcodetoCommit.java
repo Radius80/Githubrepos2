@@ -1,4 +1,4 @@
-/*
+/*****************************************************
  * 1 3 5 7 11 13 17
  */
 
@@ -11,6 +11,7 @@ public class TestcodetoCommit {
         StringstuffAPI ssapi = new StringstuffAPI(); // This is making an object out of a class. I wanted to call it an ADT but Abtract Data Types usually has instance variables
         ArrayFunctions AFff = new ArrayFunctions();
         SearchingAPI srchapi = new SearchingAPI(); // use these objects to find the code that you are looking for srch is for search
+        MathAPID mpd = new MathAPID();
         //String [] argsVSpoop = {"1", "3", "5", "7","11","13", "17"}; //COMMENT OUT THIS LINE AND FIND AND REPLACE argsVSpoop with args when testing in command line. So I'm using VScode debugging tools and it does not understand argument values
         //double [][] ar1 = {{1,2,3},{3,4,5},{1,2,3}}; //Initializing declaration
         //double [][] ar2 = {{2,2,2},{1,1,1},{2,2,2}};
@@ -22,7 +23,9 @@ public class TestcodetoCommit {
         //double [][] mult = AFff.matrixMult(ar1, ar2, ar1[0].length);
         //System.out.print(ssapi.LIST2DARRAY(mult));
         //System.out.println(ssapi.IntegerTOOBinary(8));
-        System.out.println(srchapi.indexOf(iarr1, 7));
+        //System.out.println(srchapi.indexOf(iarr1, 7));
+        System.out.println(mpd.FindHarmonicAprox(4));
+        System.out.println(mpd.H(4));
 
         
     }
