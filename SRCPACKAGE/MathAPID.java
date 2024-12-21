@@ -5,6 +5,8 @@ public class MathAPID {
      * I think the limit is 2 as ap goes to infinity
      * it is not 1/ap+... it's 1 + 1/ap because the first term is 1/1
      * Remember that for doubles you have to have at least 1 double in the computation
+     * @param ap The aproxamation degree
+     * @return Aproximated sum
      */
     public static double FindHarmonicAprox(int ap)
     {
@@ -22,4 +24,17 @@ public class MathAPID {
             sum += 1.0 / i;
         return sum;
     }
+    /**
+     * Returns the abselute value of an integer
+     * @param intt the intger without the abselute function on it
+     * @return The abselute value of the integer
+     */
+    public static int Abselute(int intt)
+    {
+        if( intt < 0)
+            return -1*intt;
+        else
+            return intt;
+    }
+
 }
