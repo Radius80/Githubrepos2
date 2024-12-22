@@ -36,5 +36,29 @@ public class MathAPID {
         else
             return intt;
     }
+    /**
+     * Checks if a integer is a prime
+     * First checks if the number is the parameter is less than 2. Remember that negative numbers is not prime. Prime numbers only have two factors. let's take -3. -3's factors are 1,-1,3,-3. There are 4. -1 != 1 and  -3 != 3
+     * @param pi Interger to be checked
+     * @return either true if the integer parameter is a prime number or false if the integer is not a prime
+     */
+    public static boolean isPrime(int pi)
+    {
+        boolean iPrim = false;
+        int div = pi;
+        if(div < 2 ){
+           iPrim = false;
+            }
+        else{
+            iPrim = true;
+            while(div > 2){
+                div--;
+                if(pi % div == 0){
+                    iPrim = false;
+                    break;}
+                }
+            }
+        return iPrim;
+    }
 
 }

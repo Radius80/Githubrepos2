@@ -27,7 +27,8 @@ public class TestcodetoCommit {
         //System.out.println(srchapi.indexOf(iarr1, 7));
         //System.out.println(mpd.FindHarmonicAprox(4));
         //System.out.println(mpd.H(4));
-        System.out.println(mpd.Abselute(-1));
+        //System.out.println(mpd.Abselute(-1));
+        System.out.println(mpd.isPrime(3) + " ");
         
     }
 
