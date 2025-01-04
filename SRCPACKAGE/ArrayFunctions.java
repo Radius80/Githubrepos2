@@ -27,5 +27,24 @@ public class ArrayFunctions {
         }
         return ret;
     }
-    
-}
+    /**
+     * This is a function that fills a array with the index squared integers. 
+     * It comes from an exercise 
+     * It comes from Algo exer 1.1.10
+     * @implNote answer It does not allocate memory for a[] with new. This code results in a
+variable a might not have been initialized compile-time error
+     * 1.1.10 What is wrong with the following code fragment?
+int[] a;
+for (int i = 0; i < 10; i++)
+a[i] = i * i;
+     * @param a integer arrays
+     * @param s size
+     * @return array of integers
+     */
+    public static void fillInts(int [] a, int s)
+    {
+        for (int i = 0; i < s; i++)
+            a[i] = i*i;
+    }
+
+}   

@@ -19,6 +19,21 @@ public class StringstuffAPI {
         return contents;
     }
 
+
+    /**Print contents of array
+     * at the moment it only works with int arrays a useful abstraction to make is to let any data type be available to enter
+    * @param arr - 2D array of which contents need to be printed
+    * @return String of list of contents of array
+    */
+    public static String LISTARRAYint(int[] arr)
+    {
+        String contents = "";
+        for (int i = 0; i < arr.length; i ++)
+        {
+            contents += arr[i] + " ";
+        }
+        return contents;
+    }
     /**
      * Converts a integer to binary and displayes it as a string
      * @param N: Int to be desplayed as binary string

@@ -8,10 +8,11 @@ public class TestcodetoCommit {
         // initializing declaration of a 2D array
         // if the class you are using in your client is in the same package you do not have to have to import anything
        
-       // StringstuffAPI ssapi = new StringstuffAPI(); // This is making an object out of a class. I wanted to call it an ADT but Abtract Data Types usually has instance variables
-        //ArrayFunctions AFff = new ArrayFunctions();
+       StringstuffAPI ssapi = new StringstuffAPI(); // This is making an object out of a class. I wanted to call it an ADT but Abtract Data Types usually has instance variables
+        ArrayFunctions AFff = new ArrayFunctions();
+        int arr [] = new int[5];
         //SearchingAPI srchapi = new SearchingAPI(); // use these objects to find the code that you are looking for srch is for search
-        MathAPID mpd = new MathAPID();
+        //MathAPID mpd = new MathAPID();
 
         //String [] argsVSpoop = {"1", "3", "5", "7","11","13", "17"}; //COMMENT OUT THIS LINE AND FIND AND REPLACE argsVSpoop with args when testing in command line. So I'm using VScode debugging tools and it does not understand argument values
         //double [][] ar1 = {{1,2,3},{3,4,5},{1,2,3}}; //Initializing declaration
@@ -28,7 +29,8 @@ public class TestcodetoCommit {
         //System.out.println(mpd.FindHarmonicAprox(4));
         //System.out.println(mpd.H(4));
         //System.out.println(mpd.Abselute(-1));
-        System.out.println(mpd.isPrime(3) + " ");
+        AFff.fillInts(arr,arr.length);
+        System.out.println(ssapi.LISTARRAYint(arr));
         
     }
 
